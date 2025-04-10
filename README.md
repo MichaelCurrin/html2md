@@ -1,9 +1,18 @@
 # HTML to Markdown
 > CLI utility to convert HTML to Markdown
 
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/html2md?include_prereleases=&sort=semver&color=blue)](https://github.com/MichaelCurrin/html2md/releases/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+
+[![Made with Python](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2FMichaelCurrin%2Fhtml2md%2Frefs%2Fheads%2Fmain%2Fpyproject.toml&query=project.requires-python&label=python&logo=python&logoColor=white)](https://python.org "Go to Python homepage")
+[![dependency - poetry](https://img.shields.io/badge/poetry-2.x-blue)](https://pypi.org/project/poetry)
+
+
 ## Use case
 
-Usually you can use a webscraper to download a webpage and then convert that to Markdown. But if you get blocked using a webdriver, you can save the rendered page's DOM and then put it through this CLI tool to convert it to Markdown. If you just copied the content directly and pasted into a text file, you'd lose the formatting, and putting into a rich-text format is not easy to work with from the CLI.
+Usually you can use a webscraper to download a webpage and then convert that to Markdown. But if you get blocked using a webdriver, you can save the rendered page's DOM and then put it through this CLI tool to convert it to Markdown.
+
+If you just copied the content directly and pasted into a text file, you'd lose the formatting, and putting into a rich-text format is not easy to work with from the CLI.
 
 ## Steps to download the HTML content
 
