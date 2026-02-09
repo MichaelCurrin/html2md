@@ -10,20 +10,30 @@
 
 ## Use case
 
-Usually you can use a webscraper to download a webpage and then convert that to Markdown. But if you get blocked using a webdriver, you can save the rendered page's DOM and then put it through this CLI tool to convert it to Markdown.
+Usually you can use a webscraper to download a webpage and then convert that to Markdown easily. 
 
-If you just copied the content directly and pasted into a text file, you'd lose the formatting, and putting into a rich-text format is not easy to work with from the CLI.
+If it's JS-based Single-Page app, then rather can save the rendered page's DOM and then put it through this CLI tool to convert it to Markdown.
+
+As alternatives, if you just copied the content on the webpage directly and pasted into a plain text file, you'd lose the formatting (like headings and links), and if you pasted it into a rich-text format (like Word or Google Doc) is not easy to work with from the CLI.
 
 ## Steps to download the HTML content
 
-If the page is rendered with HTML and doesn't need JS, you can save the page as an HTML page using File / Save As in your browser.
+### Plain HTML sites
+
+If the page is rendered with HTML and doesn't need JS:
+
+1. Save the page as an HTML page using _File / Save As_ in your browser.
+1. Run the Python CLI tool.
+
+### JS web apps
 
 If it is a JS-based website:
 
 1. Open the devtools inspector.
 1. Select the body element.
 1. Right-click and copy the element with "Copy outerHTML".
-1. Paste the content for use with the CLI tool.
+1. Paste the content into an HTML file.
+1. Run the Python CLI tool.
 
 ## Usage
 
