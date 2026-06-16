@@ -3,7 +3,7 @@ package-mode = true
 
 [project]
 name = "html2md"
-version = "0.2.0"
+version = "0.3.0"
 description = "CLI utility to convert HTML to Markdown"
 authors = [
     { name = "Michael Currin", email = "18750745+MichaelCurrin@users.noreply.github.com" },
