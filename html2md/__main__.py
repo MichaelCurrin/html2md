@@ -45,9 +45,8 @@ def main():
         help="HTML input value.",
     )
     args = parser.parse_args()
-    print(args)
     if not args.file and not args.value:
-        raise ValueError("Must provide one of the input path or HTML value.")
+        parser.error("Must provide one of --file/-f or --value/-v.")
 
     html_value = _get_content(args.file) if args.file else args.value
     result = md(html_value, heading_style=ATX, bullets=BULLETS)
