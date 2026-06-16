@@ -9,13 +9,21 @@
 
 This is a very light wrapper on the [markdownify](https://pypi.org/project/markdownify/) package, with added CLI layer and some configuration.
 
-## Use case
+The tool accepts HTML as a file or direct CLI input so does not download content at all.
 
-Usually you can use a webscraper to download a webpage and then convert that to Markdown easily.
 
-If it's JS-based Single-Page app, then rather can save the rendered page's DOM and then put it through this CLI tool to convert it to Markdown.
+## Use cases
 
-As alternatives, if you just copied the content on the webpage directly and pasted into a plain text file, you'd lose the formatting (like headings and links), and if you pasted it into a rich-text format (like Word or Google Doc) is not easy to work with from the CLI.
+- You want the content on the page for your notes (like Obsidian or Notion) without the extra info.
+- You want to feed the text into an LLM or RAG database as formatted text but with Markdown as something much lighter and shorter than HTML.
+
+## Flow
+
+Use a webscraper to download a plain HTML webpage and then convert that to Markdown.
+
+If it's JS-based Single-Page app, then rather save the **rendered page's DOM** and then put it through this CLI tool to convert it to **Markdown**.
+
+As alternatives to this project, if you just copied the content on the webpage directly and pasted into a plain text file, you'd **lose the formatting** (like headings and links), and if you pasted it into a rich-text format (like Word or Google Doc) is not easy to work with from the CLI.
 
 ## Steps to download the HTML content
 
