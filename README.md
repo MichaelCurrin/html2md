@@ -11,7 +11,7 @@ This is a very light wrapper on the [markdownify](https://pypi.org/project/markd
 
 ## Use case
 
-Usually you can use a webscraper to download a webpage and then convert that to Markdown easily. 
+Usually you can use a webscraper to download a webpage and then convert that to Markdown easily.
 
 If it's JS-based Single-Page app, then rather can save the rendered page's DOM and then put it through this CLI tool to convert it to Markdown.
 
@@ -39,15 +39,51 @@ If it is a JS-based website:
 ## Usage
 
 ```console
-> poetry run python -m html2md --help
+> html2md --help
 ```
 
+Give an HTML file as input:
+
 ```console
-> poetry run python -m html2md -f in.html
+> html2md -f in.html
 **Hello**
 ```
 
+Give text directly:
+
 ```console
-> poetry run python -m html2md -v '<b>Hello</b>'
+> html2md -v '<b>Hello</b>'
 **Hello**
+```
+
+## Setup
+
+Install with pip:
+
+```sh
+$ pip install git+https://github.com/MichaelCurrin/html2md
+```
+
+Or with [pipx](https://pipx.pypa.io/stable/) for managing in an isolated environment.
+
+```sh
+$ pip install pipx
+$ pipx install git+https://github.com/MichaelCurrin/html2md
+```
+
+
+## Development
+
+Clone the repo.
+
+Install dependencies with Python and Poetry:
+
+```sh
+poetry install
+```
+
+Then run as:
+
+```sh
+poetry run python -m html2md [FLAGS]
 ```

@@ -1,7 +1,9 @@
+"""
+HTML to Markdown application module.
+"""
+
 import argparse
 from pathlib import Path
-import sys
-from typing import Optional
 
 from markdownify import ATX
 from markdownify import markdownify as md
@@ -19,11 +21,6 @@ def _get_content(input_path_str: str) -> str:
 
     with open(input_path, encoding="utf-8") as f_in:
         return f_in.read().strip()
-
-def convert_input(html_value: str) -> md:
-
-
-    return
 
 
 def main():
