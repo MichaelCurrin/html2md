@@ -32,7 +32,7 @@ As alternatives to this project, if you just copied the content on the webpage d
 If the page is rendered with HTML and doesn't need JS:
 
 1. Save the page as an HTML page using _File / Save As_ in your browser.
-1. Run the Python CLI tool.
+1. Run the Python CLI tool on that.
 
 ### JS web apps
 
@@ -42,7 +42,7 @@ If it is a JS-based website:
 1. Select the body element.
 1. Right-click and copy the element with "Copy outerHTML".
 1. Paste the content into an HTML file.
-1. Run the Python CLI tool.
+1. Run the Python CLI tool on that.
 
 ## Usage
 
