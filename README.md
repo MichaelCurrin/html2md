@@ -53,14 +53,14 @@ If it is a JS-based website:
 Give an HTML file as input:
 
 ```console
-> html2md -f in.html
+> html2md --file in.html
 **Hello**
 ```
 
 Give text directly:
 
 ```console
-> html2md -v '<b>Hello</b>'
+> html2md --value '<b>Hello</b>'
 **Hello**
 ```
 
